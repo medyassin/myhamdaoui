@@ -305,10 +305,10 @@ nav ul.menu-list li.menu-list-item.up {
     height: 100%;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(71, 119, 230, 0.835)), to(rgba(141, 84, 233, 0.801)));
-    background: -webkit-linear-gradient(left, rgba(71, 119, 230, 0.835), rgba(141, 84, 233, 0.801));
-    background: -o-linear-gradient(left, rgba(71, 119, 230, 0.835), rgba(141, 84, 233, 0.801));
-    background: linear-gradient(to right, rgba(71, 119, 230, 0.835), rgba(141, 84, 233, 0.801));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(24, 24, 24, 0.835)), to(rgba(26, 26, 26, 0.801)));
+    background: -webkit-linear-gradient(to right, rgba(24, 24, 24, 0.835), rgba(26, 26, 26, 0.801));
+    background: -o-linear-gradient(to right, rgba(24, 24, 24, 0.835), rgba(26, 26, 26, 0.801));
+    background: linear-gradient(to right, rgba(24, 24, 24, 0.835), rgba(26, 26, 26, 0.801));
 }
 
 .profile {
