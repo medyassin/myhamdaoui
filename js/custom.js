@@ -73,4 +73,9 @@ $(function() {
 
     /* Trigger AOS */
     AOS.init({duration: 1000});
+
+    /* Loading Animation */
+    $(window).on("load", function(){
+        $('.preloader').fadeOut(1000);
+    });
 });
