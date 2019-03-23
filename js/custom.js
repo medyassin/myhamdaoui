@@ -78,4 +78,9 @@ $(function() {
     $(window).on("load", function(){
         $('.preloader').fadeOut(1000);
     });
+
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+    });
 });
