@@ -305,10 +305,7 @@ nav ul.menu-list li.menu-list-item.up {
     height: 100%;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(69, 67, 206, 0.835)), to(rgba(55, 57, 121, 0.801)));
-    background: -webkit-linear-gradient(to right, rgba(69, 67, 206, 0.835), rgba(55, 57, 121, 0.801));
-    background: -o-linear-gradient(to right, rgba(69, 67, 206, 0.835), rgba(55, 57, 121, 0.801));
-    background: linear-gradient(to right, rgba(69, 67, 206, 0.835), rgba(55, 57, 121, 0.801))
+    background: rgba(0, 0, 0, 0.8117647058823529);
 }
 
 .profile {
@@ -367,8 +364,28 @@ nav ul.menu-list li.menu-list-item.up {
     transition: all .3s ease-in;
 }
 
+.profile-pic::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(42, 22, 208, 0.62);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.profile-pic:hover::after {
+    opacity: 1;
+    width: 85%;
+    height: 95%;
+}
+
 .profile-pic img:hover {
-    filter: brightness(0.5);
+
 }
 
 .social-networks {
