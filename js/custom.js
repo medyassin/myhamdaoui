@@ -90,12 +90,9 @@ $(function() {
         var i = 0;
         data.data.forEach(function(e) {
             if(i < $(".insta-photo").length) {
-                $(".insta-photo").children("a").children("img")[i++].src = e.images.standard_resolution.url;
-                $(".insta-photo").children("a").attr("href", e.link);
-                console.log(e.link);
+                $(".insta-photo").children("a").children("img").eq(i).attr("src", e.images.standard_resolution.url);
+                $(".insta-photo").children("a").eq(i++).attr("href", e.link);
             }
         });
     });
-
-    console.log($(".insta-photo"))
 });
