@@ -83,4 +83,19 @@ $(function() {
     particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
     });
+
+    /* POST INSTA API */
+    $.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=2202752019.e5a95a6.5f381ec11eac41cea7ff6e7aa80f587f").done(function(data) {
+        $(".instagram").fadeIn();
+        var i = 0;
+        data.data.forEach(function(e) {
+            if(i < $(".insta-photo").length) {
+                $(".insta-photo").children("a").children("img")[i++].src = e.images.standard_resolution.url;
+                $(".insta-photo").children("a").attr("href", e.link);
+                console.log(e.link);
+            }
+        });
+    });
+
+    console.log($(".insta-photo"))
 });
