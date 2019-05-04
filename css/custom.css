@@ -534,7 +534,6 @@ nav ul.menu-list li.menu-list-item.up {
 
 .devwork {
     border-radius: 3px;
-    border: 1px solid rgb(244, 244, 244);;
     overflow: hidden;
     cursor: pointer;
     -webkit-transition: all .2s ease-in;
@@ -542,6 +541,8 @@ nav ul.menu-list li.menu-list-item.up {
     transition: all .2s ease-in;
     margin-bottom: 2rem;
     position: relative;
+    -webkit-box-shadow: 0 10px 20px 5px #0000000a;
+            box-shadow: 0 10px 20px 5px #0000000a;
 }
 
 .devwork img {
@@ -558,10 +559,6 @@ nav ul.menu-list li.menu-list-item.up {
     -webkit-transform: translateY(-10px) !important;
         -ms-transform: translateY(-10px) !important;
             transform: translateY(-10px) !important;
-}
-
-.devwork:hover img {
-    filter: grayscale();
 }
 
 .devwork h4 {
@@ -685,6 +682,22 @@ nav ul.menu-list li.menu-list-item.up {
 .used-tools ul li:hover {
     color: rgb(118, 64, 216);
     text-decoration: underline;
+}
+
+.new-badge {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 86px;
+    height: 30px;
+    background-color: rgb(27, 241, 93);
+    box-shadow: 0 0 19px 0px #0000001e;
+    border-radius: 23px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 100000;
 }
 
 @media screen and (max-width: 990px) {

@@ -39,11 +39,11 @@ $(function() {
      - Portfolio Hover effect
     */
 
-    $(".devwork").filter(function(i) {
-        if(i >= 4) {
-            return true;
-        }
-    }).hide();
+    // $(".devwork").filter(function(i) {
+    //     if(i >= 4) {
+    //         return true;
+    //     }
+    // }).hide();
 
     $(".show-more").on("click", function() {
         $(".devwork").filter(function(i) {
